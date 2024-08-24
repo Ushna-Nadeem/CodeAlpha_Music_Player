@@ -1,0 +1,197 @@
+/* General body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #1d2b64, #f8cdda);
+}
+
+/* Player container to hold everything */
+.player-container {
+    width: 320px;
+    background-color: rgba(255, 255, 255, 0.15); /* translucent background */
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    backdrop-filter: blur(10px); /* adding blur effect for sleekness */
+}
+
+/* Image container */
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* modern shadow */
+}
+
+/* Info container */
+.info-container h2 {
+    margin: 10px 0 5px;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.info-container p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0.8;
+}
+
+/* Progress bar */
+.progress-bar {
+    width: 100%;
+    margin: 15px 0;
+    -webkit-appearance: none;
+    height: 8px;
+    background-color: #d1d1d1;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%; /* Adjust this dynamically based on song progress */
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    border-radius: 5px;
+    transition: width 0.2s; /* Smooth transition */
+}
+
+.progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* glowing effect */
+}
+
+.progress-bar::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Time container */
+.time-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+/* Buttons container */
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Like and Share container */
+.like-share-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Unified control buttons */
+.control-button {
+    background-color: rgba(255, 255, 255, 0.1); /* more subtle transparency */
+    border: none;
+    border-radius: 50%;
+    width: 40px; /* unified width */
+    height: 40px; /* unified height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+}
+
+.control-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1); /* zoom effect */
+}
+
+.control-button:active {
+    transform: scale(0.95); /* slight press effect */
+}
+
+/* Volume slider */
+.volume-slider {
+    width: 100%;
+    margin-top: 15px;
+    -webkit-appearance: none;
+    height: 5px;
+    background-color: #d1d1d1;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.volume-slider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%; /* Adjust dynamically */
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    border-radius: 5px;
+    transition: width 0.2s; /* Smooth transition */
+}
+
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.volume-slider::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}

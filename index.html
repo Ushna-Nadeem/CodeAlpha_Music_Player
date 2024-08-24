@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeAlpha Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player-container">
+        <div class="image-container">
+            <img id="song-image" alt="Album Cover">
+        </div>
+        <div class="info-container">
+            <h2 id="song-title"></h2>
+            <p id="song-artist"></p>
+        </div>
+        <div class="controls-container">
+            <input type="range" id="progress" class="progress-bar" value="0" max="100">
+            <div class="time-container">
+                <span id="current-time">0:00</span>
+                <span id="duration-time">-3:05</span>
+            </div>
+            <div class="buttons-container">
+                <button id="prev" class="control-button">&#9664;</button>
+                <button id="play-pause" class="control-button">&#9658;</button>
+                <button id="next" class="control-button">&#9654;</button>
+            </div>
+            <div class="like-share-container">
+                <button id="like" class="control-button">&#9825;</button>
+                <button id="share" class="control-button">&#128279;</button>
+            </div>
+            <input type="range" id="volume" class="volume-slider" min="0" max="100" value="50">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
