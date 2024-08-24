@@ -35,7 +35,7 @@ No installation is required. Simply open the `index.html` file in your web brows
 ## Development
 If you wish to modify or enhance the Music Player Web App, follow these steps:
 
-1. Clone the Repository: `git clone https://github.com/your/repository.git`
+1. Clone the Repository: `https://github.com/Ushna-Nadeem/CodeAlpha_Music_Player.git`
 2. Open `index.html`, `style.css`, and `script.js` files in your preferred code editor.
 3. Make changes to HTML for structure, CSS for styling, and JavaScript for functionality.
 4. Test your changes locally by opening `index.html` in a web browser.
